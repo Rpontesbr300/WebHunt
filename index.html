@@ -771,15 +771,15 @@
             }
 
             const payload = { puzzleNumber, reducedPoolToken, privateKey };
-            log(`Enviando resultado: ${JSON.stringify(payload)} <a href="https://bitcoinpuzzles.io/loterias/personal-db" target="_blank">Mais informações</a>`);
+            //log(`Enviando resultado: ${JSON.stringify(payload)} <a href="https://bitcoinpuzzles.io/loterias/personal-db" target="_blank">Mais informações</a>`);
 
-            fetch('https://bitcoinpuzzles.io/api/puzzle-results', {
-                method: 'POST',
-                headers: { 'Content-Type': 'application/json' },
-                body: JSON.stringify(payload)
-            }).catch(err => {
-                log(`<span class="error">Erro ao enviar resultados: ${err.message}</span>`);
-            });
+            //fetch('https://bitcoinpuzzles.io/api/puzzle-results', {
+                //method: 'POST',
+                //headers: { 'Content-Type': 'application/json' },
+                //body: JSON.stringify(payload)
+            //}).catch(err => {
+                //log(`<span class="error">Erro ao enviar resultados: ${err.message}</span>`);
+            //});
         }
 
         // Function to display found keys on the page
